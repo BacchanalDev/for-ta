@@ -1,5 +1,4 @@
-const { process } = require('ipaddr.js');
-const {Client} = require('pg') ;
+const { Client } = require('pg');
 // DB_URI is the var we will be using
 let DB_URI;
 

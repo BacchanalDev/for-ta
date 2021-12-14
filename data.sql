@@ -1,16 +1,16 @@
-DROP DATABASE IF EXIST productsdb;
+DROP DATABASE IF EXISTS productsdb;
 
 CREATE DATABASE productsdb;
 
 \c productsdb;
 
-DROP TABLE IF EXIST products;
+DROP TABLE IF EXISTS products;
 
 CREATE TABLE products
 (
     id SERIAL PRIMARY KEY,
     name text NOT NULL,
-    type text NOT NULL,
+    type text NOT NULL
     -- price number NOT NULL
 );
 
@@ -37,7 +37,7 @@ VALUES
 INSERT INTO products
     (name, type)
 VALUES
-    (`Sleepless Nights`, 'Lotion');
+    ('Sleepless Nights', 'Lotion');
 
 INSERT INTO products
     (name, type)
@@ -47,9 +47,9 @@ VALUES
 INSERT INTO products
     (name, type)
 VALUES
-    (`Tonight's The Night`, 'Lotion');
+    ('Tonight''s The Night', 'Lotion');
 
 INSERT INTO products
     (name, type)
 VALUES
-    (`Warrior's Creed, 'Lotion`);
+    ('Warrior''s Creed', 'Lotion');
